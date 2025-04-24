@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Markazi+Text:wght@400..700&family=Montserrat:ital,wght@0,700;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="files/tab-logo.png" type="image/png" />
+    <script src="p4_formpage.js"></script>
+    <title>Form | Trendy Films | Winnipeg Wedding Videographer</title>
+</head>
+<body id="formpage-body">
+    <header>
+        <nav id="form-nav" aria-label="Services site navigation">
+            <ul id="form-nav-list">
+                <li><a href="index.html#home-section" id="form-nav-animate">HOME</a></li>
+                <li><a href="index.html#storytellers-section" id="form-nav-animate">STORYTELLERS</a></li>
+                <li><a href="p4_servicepage.html" id="form-nav-animate">SERVICES</a></li>
+                <li><a href="#form-footer-section" id="form-nav-animate">REACH OUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="form-background">
+        <div id="form-wrapper">
+            <form method="get" id="form-page-js" action="index.html">
+                <fieldset id="form-fieldset">
+                    <legend><h1>CUSTOMER'S INFORMATION</h1></legend>
+                    <ul>
+                        <li>
+                            <label>Full Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Last name, First name"/>
+                            <p id="fullname_error" class="nameError error">* Required Field</p>
+                        </li>
+                        <li>
+                            <label for="telnumber">Telephone Number</label>
+                            <input type="tel" id="telnumber" name="telnumber" placeholder="+1 (XXX) XXX-XXXX"/>
+                            <p id="telnumber_error" class="numError error">* Required Field</p>
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="sample@gmail.com"/>
+                            <p id="email_error" class="mailError error">* Required Field</p>
+                        </li>
+                        <li>
+                            <p><label for="comments">Anything else you'd like to tell us?</label></p>
+                            <textarea id="comments" name="textarea" rows="10" cols="50" placeholder="Target event date, which event type like wedding, proposals, and etc."></textarea>
+                        </li>
+                    </ul>
+                    <div id="form-button-wrapper">
+                        <button type="submit" id="submitBtn" class="form-line-up-button">Proceed to wonder</button>
+                        <button type="reset" id="clearBtn" class="cancel-line-up-button">Reset thoughts</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer id="form-footer-background">
+        <div id="form-footer-section">
+            <div id="form-footer-top">
+                <img src="files/services-logo.png" id="form-footer-logo" alt="Story and Wonder Studios Logo" />
+                <nav id="form-footer-nav" aria-label="Footer navigation">
+                    <ul id="form-footer-ul">
+                        <li><a href="index.html#home-section" id="form-nav-footer">Home</a></li>
+                        <li><a href="index.html#storytellers-section" id="form-nav-footer">Storytellers</a></li>
+                        <li><a href="p4_servicepage.html" id="form-nav-footer">Services</a></li>
+                        <li><a href="#form-nav" id="form-nav-footer">Reach Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div id="form-footer-socials">
+                <a href="https://www.instagram.com/storyandwonderstudios/" id="form-footer-socials-a" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram fa-2x"></i> <!-- built in class cannot be changed to ids-->
+                </a>
+                <a href="https://www.youtube.com/@StoryAndWonderStudios" id="form-footer-socials-a" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube fa-2x"></i> <!-- built in class cannot be changed to ids-->
+                </a>
+                <a href="https://www.facebook.com/storyandwonderstudios" id="form-footer-socials-a" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook fa-2x"></i> <!-- built in class cannot be changed to ids-->
+                </a>
+            </div>
+            <p id="form-footer-contact">StoryandWonderStudios@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
